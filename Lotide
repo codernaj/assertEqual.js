@@ -1,0 +1,11 @@
+const compareValues = function(value1, value2) {
+  if (value1 === value2) {
+    console.log(`✅ ${value1} matches ${value2} ✅`);
+  } else {
+    console.log(`❌ ${value1} does not match ${value2} ❌`);
+  }
+};
+
+compareValues(1, 1); // prints "✅ 1 matches 1 ✅"
+compareValues(1, 2); // prints "❌ 1 does not match 2 ❌"
+compareValues("hello", "world"); // prints "❌ hello does not match world ❌"
